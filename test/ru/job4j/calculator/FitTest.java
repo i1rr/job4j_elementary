@@ -6,7 +6,7 @@ import org.junit.Assert;
 public class FitTest {
 
     @Test
-    public void whenmanWeight() {
+    public void whenmanWeight180then92() {
         short in = 180;
         double expected = 92;
         double out = Fit.manWeight(in);
@@ -14,7 +14,7 @@ public class FitTest {
     }
 
     @Test
-    public void womenWeight() {
+    public void whenwomenWeight170then69() {
         short in = 170;
         double expected = 69;
         double out  = Fit.womenWeight(in);
