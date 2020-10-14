@@ -27,4 +27,11 @@ class FitnessTest {
         assertThat(month, is(expectation));
     }
 
+    @Test
+    void whenI90N90Month1() {
+        int month = Fitness.calc(90, 90);
+        int expectation = 1;
+        assertThat(month, is(expectation));
+    }
+
 }
