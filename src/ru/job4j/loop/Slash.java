@@ -1,7 +1,5 @@
 package ru.job4j.loop;
 
-import java.sql.SQLOutput;
-
 public class Slash {
     public static void draw(int size) {
         for (int row = 1; row <= size; row++) {
