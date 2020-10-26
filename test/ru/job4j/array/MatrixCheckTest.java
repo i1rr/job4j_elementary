@@ -51,4 +51,16 @@ class MatrixCheckTest {
         boolean result = MatrixCheck.monoVertical(input, 1);
         assertThat(result, is(false));
     }
+
+    @Test
+    void extractDiagonal() {
+        char[][] input = {
+                {'X', 'Z', 'H'},
+                {'O', 'X', 'P'},
+                {'A', '!', 'X'}
+        };
+        char[] expect = {'X', 'X', 'X'};
+        char[] result = MatrixCheck.extractDiagonal(input);
+        assertThat(result, is(expect));
+    }
 }
