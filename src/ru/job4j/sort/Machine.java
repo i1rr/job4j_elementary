@@ -9,7 +9,7 @@ public class Machine {
         int change = money - price;
         int[] totalChange = new int[100];
         int totalChangeMultiplier = 0;
-        for (int coinValue = 0; coinValue < 4; coinValue++) {
+        for (int coinValue = 0; coinValue < COINS.length; coinValue++) {
             while (change - COINS[coinValue] >= 0) {
                 change = change - COINS[coinValue];
                 totalChange[totalChangeMultiplier++] = COINS[coinValue];
